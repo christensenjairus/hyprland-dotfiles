@@ -3,6 +3,9 @@
 ![Screenshot](https://github.com/ChrisTitusTech/hyprland-titus/raw/main/hyprland-titus.png)
 
 ## Install
+* Use the Graphical Installer for Arch (Gnome one is fine)
+* Use swap + hibernate
+* Use btrfs file system
 
 ### Update
 You may or may not need to run this if pacman updates aren't working
@@ -42,7 +45,9 @@ noto-fonts-extra unicode-character-database otf-font-awesome  \
 
 ### My Other Packages
 ```bash
-yay -S base-devel vim git wget curl qemu-guest-agent zsh bitwarden discord slack-desktop joplin-desktop
+yay -S base-devel vim git wget curl qemu-guest-agent zsh      \
+bitwarden discord slack-desktop joplin-desktop showmethekey   \
+deja-dup
 ```
 
 # Autologin
@@ -59,15 +64,8 @@ sudo usermod -a -G autologin <username>
 
 ## Gotchas
 
-- Recommend archinstall with Sway as desktop for base
 - SDDM-GIT is required or you will run into shutdown bugs and delays
-- SDDM needs to be configured for autologin (recommend using swaylock on start of script for security)
 - Replace xdg-desktop-portal-wlr with **[xdg-desktop-portal-hyprland-git](https://wiki.hyprland.org/hyprland-wiki/pages/Useful-Utilities/Hyprland-desktop-portal/)**
-
-## Bugs
-
-- Hyprland is still in beta (0.2) as of the creation of these dot files
-- Sometimes my RX5700XT goes to sleep and requires a reload, because it is stuck on black screen.
 
 ## Work In Progress
 
