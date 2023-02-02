@@ -23,7 +23,13 @@ rofi pavucontrol thunar starship wl-clipboard wf-recorder     \
 swaybg grimblast-git ffmpegthumbnailer tumbler playerctl      \
 noise-suppression-for-voice thunar-archive-plugin kitty       \
 waybar-hyprland wlogout swaylock-effects sddm-git pamixer     \
-nwg-look-bin nordic-theme papirus-icon-theme dunst
+nwg-look-bin nordic-theme papirus-icon-theme dunst            \
+hyprpicker-git firefox
+```
+
+### My Other Packages
+```bash
+yay -S base-devel vim git wget curl qemu-guest-agent zsh bitwarden discord slack-desktop joplin-desktop
 ```
 
 ## Gotchas
