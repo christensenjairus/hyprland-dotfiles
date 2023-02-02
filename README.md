@@ -1,8 +1,19 @@
-# Hyprland config files from Titus
+# Hyprland Linux Configuration
 
 ![Screenshot](https://github.com/ChrisTitusTech/hyprland-titus/raw/main/hyprland-titus.png)
 
 ## Install
+
+### Update
+You may or may not need to run this if pacman updates aren't working
+```bash
+sudo find /var/cache/pacman/pkg/ -iname "*.part" -delete
+sudo pacman -Syc
+sudo pacman -Sy archlinux-keyring
+sudo pacman-key --init
+sudo pacman-key --delete 91FFE0700E80619CEB73235CA88E23E377514E00
+sudo pacman-key --populate archlinux
+```
 
 ### Yay
 
