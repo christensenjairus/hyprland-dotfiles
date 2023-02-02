@@ -35,7 +35,9 @@ swaybg grimblast-git ffmpegthumbnailer tumbler playerctl      \
 noise-suppression-for-voice thunar-archive-plugin kitty       \
 waybar-hyprland wlogout swaylock-effects sddm-git pamixer     \
 nwg-look-bin nordic-theme papirus-icon-theme dunst            \
-hyprpicker-git firefox
+hyprpicker-git firefox nono-fonts noto-fonts-emoji            \
+noto-fonts-extra unicode-character-database otf-font-awesome  \
+
 ```
 
 ### My Other Packages
@@ -43,6 +45,13 @@ hyprpicker-git firefox
 yay -S base-devel vim git wget curl qemu-guest-agent zsh bitwarden discord slack-desktop joplin-desktop
 ```
 
+# Autologin
+Paste this into `/etc/sddm.conf.d/autologin.conf` (you may have to make this directory)
+```bash
+[Autologin]
+User=<username>
+Session=Hyprland
+```
 ## Gotchas
 
 - Recommend archinstall with Sway as desktop for base
