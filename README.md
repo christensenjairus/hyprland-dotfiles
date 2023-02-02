@@ -38,16 +38,15 @@ swaybg grimblast-git ffmpegthumbnailer tumbler playerctl      \
 noise-suppression-for-voice thunar-archive-plugin kitty       \
 waybar-hyprland wlogout swaylock-effects sddm-git pamixer     \
 nwg-look-bin nordic-theme papirus-icon-theme dunst            \
-hyprpicker-git firefox nono-fonts noto-fonts-emoji            \
-noto-fonts-extra unicode-character-database otf-font-awesome  \
-
+hyprpicker-git nono-fonts noto-fonts-emoji                    \
+noto-fonts-extra unicode-character-database otf-font-awesome
 ```
 
 ### My Other Packages
 ```bash
 yay -S base-devel vim git wget curl qemu-guest-agent zsh      \
 bitwarden discord slack-desktop joplin-desktop showmethekey   \
-deja-dup
+firefox brave deja-dup timeshift
 ```
 
 # Autologin
