@@ -39,7 +39,8 @@ noise-suppression-for-voice thunar-archive-plugin kitty       \
 waybar-hyprland wlogout swaylock-effects sddm-git pamixer     \
 nwg-look-bin nordic-theme papirus-icon-theme dunst            \
 hyprpicker-git nono-fonts noto-fonts-emoji                    \
-noto-fonts-extra unicode-character-database otf-font-awesome
+noto-fonts-extra unicode-character-database ttf-font-awesome-5\
+
 ```
 
 ### My Other Packages
