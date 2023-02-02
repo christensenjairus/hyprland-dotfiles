@@ -32,6 +32,9 @@ makepkg -si
 ### Uninstall xdg-desktop-portal
 Uninstall the version of `xdg-desktop-portal` you have installed by default. This could be `xdg-desktop-portal-wlr` or `xdg-desktop-portal-gnome`.
 
+### Powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
 ### Packages
 
 ``` bash
@@ -57,7 +60,8 @@ oh-my-zsh-plugin-autosuggestions docker docker-compose        \
 ttf-jetbrains-mono ttf-jetbrains-mono-nerd phpstorm-jre       \
 webstorm-jre rider datagrip-jre goland-jre jetbrains-gateway  \
 jetbrains-idea-pj jetbrains-clion-pj spotify plexamp-appimage \
-pianobar github-desktop-bin tlp tlpui
+pianobar github-desktop-bin tlp tlpui zsh-theme-powerlevel10k \
+ttf-meslo-nerd-font-powerlevel10k lolcat
 ```
 Installing oh-my-zsh
 ```bash
