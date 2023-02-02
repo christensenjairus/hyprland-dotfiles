@@ -63,7 +63,7 @@ jetbrains-idea-pj jetbrains-clion-pj spotify plexamp-appimage \
 pianobar github-desktop-bin tlp tlpui zsh-theme-powerlevel10k \
 ttf-meslo-nerd-font-powerlevel10k lolcat blueman bluez-utils  \
 media-control-indicator-git mpris-proxy-service wdisplays wayvnc\
-
+onedrivegui-git
 ```
 Installing oh-my-zsh
 ```bash
