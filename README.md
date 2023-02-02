@@ -61,7 +61,8 @@ ttf-jetbrains-mono ttf-jetbrains-mono-nerd phpstorm-jre       \
 webstorm-jre rider datagrip-jre goland-jre jetbrains-gateway  \
 jetbrains-idea-pj jetbrains-clion-pj spotify plexamp-appimage \
 pianobar github-desktop-bin tlp tlpui zsh-theme-powerlevel10k \
-ttf-meslo-nerd-font-powerlevel10k lolcat
+ttf-meslo-nerd-font-powerlevel10k lolcat blueman bluez-utils  \
+media-control-indicator-git mpris-proxy-service
 ```
 Installing oh-my-zsh
 ```bash
