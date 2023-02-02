@@ -46,8 +46,15 @@ noto-fonts-extra unicode-character-database ttf-font-awesome-5\
 ### My Other Packages
 ```bash
 yay -S base-devel vim git wget curl qemu-guest-agent zsh      \
-bitwarden discord slack-desktop joplin-desktop showmethekey   \
-firefox brave deja-dup timeshift
+bitwarden discord slack-desktop-wayland joplin-desktop        \
+firefox brave deja-dup timeshift dropbox nextcloud-client     \
+showmethekey teams-for-linux visual-studio-code-bin           \
+oh-my-zsh-git  oh-my-zsh-plugin-syntax-highlighting           \
+oh-my-zsh-plugin-autosuggestions                              \
+```
+Installing oh-my-zsh
+```bash
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 # Autologin
