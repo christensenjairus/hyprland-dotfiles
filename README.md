@@ -52,6 +52,11 @@ Paste this into `/etc/sddm.conf.d/autologin.conf` (you may have to make this dir
 User=<username>
 Session=Hyprland
 ```
+Then, add yourself to the autologin group with
+```bash
+sudo usermod -a -G autologin <username>
+```
+
 ## Gotchas
 
 - Recommend archinstall with Sway as desktop for base
