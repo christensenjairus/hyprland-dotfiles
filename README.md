@@ -54,7 +54,7 @@ oh-my-zsh-plugin-autosuggestions docker docker-compose        \
 ttf-jetbrains-mono ttf-jetbrains-mono-nerd phpstorm-jre       \
 webstorm-jre rider datagrip-jre goland-jre jetbrains-gateway  \
 jetbrains-idea-pj jetbrains-clion-pj spotify plexamp-appimage \
-pianobar
+pianobar github-desktop-bin
 ```
 Installing oh-my-zsh
 ```bash
