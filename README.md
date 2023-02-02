@@ -29,6 +29,9 @@ cd yay-bin
 makepkg -si
 ```
 
+### Uninstall xdg-desktop-portal
+Uninstall the version of `xdg-desktop-portal` you have installed by default. This could be `xdg-desktop-portal-wlr` or `xdg-desktop-portal-gnome`.
+
 ### Packages
 
 ``` bash
@@ -40,7 +43,7 @@ waybar-hyprland wlogout swaylock-effects sddm-git pamixer     \
 nwg-look-bin nordic-theme papirus-icon-theme dunst            \
 hyprpicker-git nono-fonts noto-fonts-emoji                    \
 noto-fonts-extra unicode-character-database ttf-font-awesome-5\
-
+xdg-desktop-portal-hyprland-git
 ```
 
 ### My Other Packages
@@ -54,7 +57,7 @@ oh-my-zsh-plugin-autosuggestions docker docker-compose        \
 ttf-jetbrains-mono ttf-jetbrains-mono-nerd phpstorm-jre       \
 webstorm-jre rider datagrip-jre goland-jre jetbrains-gateway  \
 jetbrains-idea-pj jetbrains-clion-pj spotify plexamp-appimage \
-pianobar github-desktop-bin
+pianobar github-desktop-bin tlp tlpui
 ```
 Installing oh-my-zsh
 ```bash
