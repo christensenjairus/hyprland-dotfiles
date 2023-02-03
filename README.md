@@ -61,8 +61,9 @@ ttf-jetbrains-mono ttf-jetbrains-mono-nerd jetbrains-toolbox  \
 pithos spotify plexamp-appimage \
 pianobar github-desktop-bin tlp tlpui zsh-theme-powerlevel10k \
 ttf-meslo-nerd-font-powerlevel10k lolcat blueman bluez-utils  \
-media-control-indicator-git mpris-proxy-service wdisplays wayvnc\
-onedrivegui-git metasploit postgresql nmap burpsuite
+media-control-indicator-git mpris-proxy-service wdisplays zoom\
+onedrivegui-git metasploit postgresql nmap burpsuite wayvnc   \
+obs-studio gimp
 ```
 Installing oh-my-zsh
 ```bash
