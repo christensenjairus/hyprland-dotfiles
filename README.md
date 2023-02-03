@@ -63,7 +63,7 @@ pianobar github-desktop-bin tlp tlpui zsh-theme-powerlevel10k \
 ttf-meslo-nerd-font-powerlevel10k lolcat blueman bluez-utils  \
 media-control-indicator-git mpris-proxy-service wdisplays zoom\
 onedrivegui-git metasploit postgresql nmap burpsuite wayvnc   \
-obs-studio gimp
+obs-studio v4l2loopback-dkms linux-headers gimp
 ```
 Installing oh-my-zsh
 ```bash
@@ -81,6 +81,8 @@ Then, add yourself to the autologin group with
 ```bash
 sudo usermod -a -G autologin <username>
 ```
+### OBS Studio Screen Sharing
+https://github.com/hw0lff/screen-share-sway
 
 ## Gotchas
 
