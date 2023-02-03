@@ -57,9 +57,8 @@ firefox brave deja-dup timeshift dropbox nextcloud-client     \
 showmethekey teams-for-linux visual-studio-code-bin           \
 oh-my-zsh-git  oh-my-zsh-plugin-syntax-highlighting           \
 oh-my-zsh-plugin-autosuggestions docker docker-compose        \
-ttf-jetbrains-mono ttf-jetbrains-mono-nerd phpstorm-jre       \
-webstorm-jre rider datagrip-jre goland-jre jetbrains-gateway  \
-jetbrains-idea-pj jetbrains-clion-pj spotify plexamp-appimage \
+ttf-jetbrains-mono ttf-jetbrains-mono-nerd jetbrains-toolbox  \
+ spotify plexamp-appimage \
 pianobar github-desktop-bin tlp tlpui zsh-theme-powerlevel10k \
 ttf-meslo-nerd-font-powerlevel10k lolcat blueman bluez-utils  \
 media-control-indicator-git mpris-proxy-service wdisplays wayvnc\
