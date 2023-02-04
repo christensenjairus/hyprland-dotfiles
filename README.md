@@ -47,7 +47,6 @@ nwg-look-bin nordic-theme papirus-icon-theme dunst            \
 hyprpicker-git nono-fonts noto-fonts-emoji                    \
 noto-fonts-extra unicode-character-database ttf-font-awesome-5\
 xdg-desktop-portal-hyprland-git qt5-wayland qt6-wayland       \
-hyprland-autoname-workspaces-git
 ```
 
 ### My Other Packages
