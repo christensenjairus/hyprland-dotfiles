@@ -46,7 +46,8 @@ waybar-hyprland wlogout swaylock-effects sddm-git pamixer     \
 nwg-look-bin nordic-theme papirus-icon-theme dunst            \
 hyprpicker-git nono-fonts noto-fonts-emoji                    \
 noto-fonts-extra unicode-character-database ttf-font-awesome-5\
-xdg-desktop-portal-hyprland-git qt5-wayland qt6-wayland
+xdg-desktop-portal-hyprland-git qt5-wayland qt6-wayland       \
+hyprland-autoname-workspaces-git
 ```
 
 ### My Other Packages
@@ -64,7 +65,7 @@ ttf-meslo-nerd-font-powerlevel10k lolcat blueman bluez-utils  \
 media-control-indicator-git mpris-proxy-service wdisplays zoom\
 onedrivegui-git onedrive_tray-git metasploit postgresql nmap  \
 wayvnc obs-studio v4l2loopback-dkms linux-headers lwrobs gimp \
-burpsuite wl-clipboard-history-git wlsunset
+burpsuite wl-clipboard-history-git wlsunset 
 ```
 Installing oh-my-zsh
 ```bash
