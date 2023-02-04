@@ -62,9 +62,9 @@ pithos spotify plexamp-appimage \
 pianobar github-desktop-bin tlp tlpui zsh-theme-powerlevel10k \
 ttf-meslo-nerd-font-powerlevel10k lolcat blueman bluez-utils  \
 media-control-indicator-git mpris-proxy-service wdisplays zoom\
-onedrivegui-git metasploit postgresql nmap burpsuite wayvnc   \
-obs-studio v4l2loopback-dkms linux-headers lwrobs gimp \
-
+onedrivegui-git onedrive_tray-git metasploit postgresql nmap  \
+wayvnc obs-studio v4l2loopback-dkms linux-headers lwrobs gimp \
+burpsuite
 ```
 Installing oh-my-zsh
 ```bash
