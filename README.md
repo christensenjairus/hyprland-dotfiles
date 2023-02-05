@@ -56,11 +56,11 @@ ttf-jetbrains-mono ttf-jetbrains-mono-nerd jetbrains-toolbox  \
 pithos spotify plexamp-appimage rofi-emoji google-chrome      \
 pianobar github-desktop-bin tlp tlpui zsh-theme-powerlevel10k \
 ttf-meslo-nerd-font-powerlevel10k lolcat blueman bluez-utils  \
-media-control-indicator-git mpris-proxy-service wdisplays zoom\
+media-control-indicator-git mpris-proxy-service wdisplays     \
 onedrivegui-git onedrive_tray-git metasploit postgresql nmap  \
-wayvnc obs-studio v4l2loopback-dkms linux-headers lwrobs gimp \
-burpsuite wl-clipboard-history-git wlsunset bpytop lf         \
-btrfs-grub timeshift-autosnap inotify-tools
+wayvnc obs-studio v4l2loopback-dkms linux-headers wlrobs gimp \
+burpsuite wl-clipboard-history-git wlsunset bpytop lf zoom    \
+grub-btrfs timeshift-autosnap inotify-tools
 ```
 
 ### Copy these files
