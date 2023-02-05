@@ -60,7 +60,7 @@ media-control-indicator-git mpris-proxy-service wdisplays     \
 onedrivegui-git onedrive_tray-git metasploit postgresql nmap  \
 wayvnc obs-studio v4l2loopback-dkms linux-headers wlrobs gimp \
 burpsuite wl-clipboard-history-git wlsunset bpytop lf zoom    \
-grub-btrfs timeshift-autosnap inotify-tools
+grub-btrfs timeshift-autosnap inotify-tools terminator
 ```
 
 ### Copy these files
