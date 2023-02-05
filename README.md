@@ -79,26 +79,12 @@ Then, add yourself to the autologin group with
 sudo usermod -a -G autologin <username>
 ```
 
-### Turn on SDDM
-```bash
-sudo systemctl disable gdm && sudo systemctl enable sddm
-```
-
-### Reboot
-* Reboot
-* Log into hyprland via SDDM
-
 ### Change browser
 ```bash
 gnome-control-center
 ```
 Use this to set your default browser to Firefox instead of Brave.
 Also, turn apps to dark mode. (IDEK if this actually does anything) 
-
-### Change your default shell to ZSH
-```bash
-sudo usermod --shell /bin/zsh <username>
-```
 
 ### Installing oh-my-zsh
 ```bash
@@ -113,6 +99,19 @@ Then set the theme in `.zshrc` if not done already. (This shouldn't be necessary
 ```bash
 sed -i 's/_THEME=\"robbyrussel\"/_THEME=\"powerlevel10k/powerlevel10k\"/g' ~/.zshrc
 ```
+Then change your default shell to ZSH
+```bash
+sudo usermod --shell /bin/zsh <username>
+```
+
+### Turn on SDDM
+```bash
+sudo systemctl disable gdm && sudo systemctl enable sddm
+```
+
+### Reboot
+* Reboot
+* Log into hyprland via SDDM
 
 # Things to Know
 ### OBS Studio Screen Sharing
