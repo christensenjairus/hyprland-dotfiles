@@ -45,8 +45,7 @@ nwg-look-bin nordic-theme papirus-icon-theme dunst            \
 hyprpicker-git noto-fonts noto-fonts-emoji                    \
 noto-fonts-extra unicode-character-database                   \
 xdg-desktop-portal-hyprland-git qt5-wayland qt6-wayland       \
-ttf-font-awesome-5 otf-font-awesome swayidle libmysofa        \
-pipewire-git
+ttf-font-awesome-5 otf-font-awesome swayidle
 ```
 
 ### Install Quality of Life Packages
@@ -123,6 +122,9 @@ dev=default
 ```bash
 sudo systemctl disable gdm && sudo systemctl enable sddm
 ```
+
+### Desktop Portal (for screensharing)
+Remove `xdg-desktop-portal-gnome` and `xdg-desktop-portal-gtk` and whichever other ones are installed, leaving only `xdg-desktop-portal` and `xdg-desktop-portal-hyprland`. These two will be started on boot by `~/.config/hypr/hyprland.conf`, no need to enable them via systemd.
 
 ### Reboot
 * Reboot
