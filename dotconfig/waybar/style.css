@@ -1,7 +1,7 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: Cartograph CF Nerd Font, monospace;
+    font-family: Ubuntu, "Font Awesome 5 Free";
     font-weight: bold;
     font-size: 14px;
     min-height: 0;
@@ -96,7 +96,9 @@ tooltip {
 #custom-updates {
     color: #f5c2e7;
     border-left: 0px;
+    margin-left: 10px;
     border-right: 0px;
+    border-radius: 10px 10px 10px 10px;
 }
 
 #window {
@@ -106,28 +108,32 @@ tooltip {
 }
 
 #clock {
-    color: #fab387;
-    border-radius: 10px 0px 0px 10px;
-    margin-left: 0px;
+    color: #fc8c88;
+    border-radius: 10px 10px 10px 10px;
+
     border-right: 0px;
 }
 
 #network {
-    color: #f9e2af;
+    color: #eb8885;
     border-left: 0px;
     border-right: 0px;
 }
 
 #pulseaudio {
-    color: #89b4fa;
+    color: rgb(62, 74, 238);
     border-left: 0px;
     border-right: 0px;
+    margin-right: 10px;
+    border-radius: 10px 10px 10px 10px;
 }
 
 #pulseaudio.microphone {
-    color: #cba6f7;
+    color: rgb(62, 74, 238);
     border-left: 0px;
     border-right: 0px;
+    margin-right: 10px;
+    border-radius: 10px 10px 10px 10px;
 }
 
 #battery {
@@ -138,7 +144,8 @@ tooltip {
 }
 
 #custom-weather {
-    border-radius: 0px 10px 10px 0px;
+    /* border-radius: 0px 10px 10px 0px; */
+    border-radius: 10px 10px 10px 10px;
     border-right: 0px;
     margin-left: 0px;
 }

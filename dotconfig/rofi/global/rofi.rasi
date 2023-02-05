@@ -129,7 +129,8 @@ element-text {
     expand: true;
     horizontal-align: 0;
     vertical-align: 0.5;
-    color: #6e6a86;
+    /*color: #6e6a86;*/
+    color: #D3D3D3;
     background-color: transparent;
 }
 
@@ -147,7 +148,8 @@ element alternate.active {
 }
 
 element selected {
-    background-color: #403d5220;
+    /*background-color: #403d5220;*/
+    background-color: #88888840;
     text-color: @foreground;
 }
 

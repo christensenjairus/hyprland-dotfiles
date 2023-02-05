@@ -30,6 +30,6 @@ bs-hl-color=31748f
 grace=2
 grace-no-mouse
 grace-no-touch
-datestr="%d.%m"
+datestr=%m/%d/%y
 fade-in="0.1"
 ignore-empty-password

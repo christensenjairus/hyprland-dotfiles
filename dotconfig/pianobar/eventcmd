@@ -1,0 +1,98 @@
+#!/bin/sh
+{
+# init naughty
+echo "naughty = require(\"naughty\")" | awesome-client
+
+# create variables
+while read L; do
+	k="`echo "$L" | cut -d '=' -f 1`"
+	v="`echo "$L" | cut -d '=' -f 2`"
+	export "$k=$v"
+done < <(grep -e '^\(title\|artist\|album\|stationName\|songStationName\|pRet\|pRetStr\|wRet\|wRetStr\|songDuration\|songPlayed\|rating\|coverArt\|stationCount\|station[0-9]*\)=' /dev/stdin) # don't overwrite $1...
+
+curl --silent -o ~/.config/pianobar/image.jpg $coverArt
+case "$1" in
+	songstart)
+		#curl --silent -o ~/.config/pianobar/image.jpg $coverArt
+#		printf -v var 'naughty.notify({title = "%s", text = "%s", icon="%s", timeout = 5, icon_size=100,})' "$artist" "$title" "$HOME/.config/pianobar/image.jpg"
+#		echo $var | awesome-client
+		notify-send --icon="$HOME/.config/pianobar/image.jpg" "$artist" "$title"
+		#echo 'naughty.notify({title = "pianobar", text = "Now playing: ' "$title" ' by ' "$artist" '"})' | awesome-client
+
+#		echo "$title -- $artist" > "${XDG_HOME_CONFIG:-${HOME}/.config}/pianobar/nowplaying"
+
+#		if [ "$rating" -eq 1 ]
+#		then
+#			kdialog --title pianobar --passivepopup "'$title' by '$artist' on '$album' - LOVED" 10
+#		else
+#			kdialog --title pianobar --passivepopup "'$title' by '$artist' on '$album'" 10
+#		fi
+		# show an OS X notification
+#		osascript -e "display notification \"$album\" with title \"$title\" subtitle \"$artist\""
+		# or whatever you like...
+		;;
+
+#	songfinish)
+#		# scrobble if 75% of song have been played, but only if the song hasn't
+#		# been banned
+#		if [ -n "$songDuration" ] && [ "$songDuration" -ne 0 ] &&
+#				[ $(echo "scale=4; ($songPlayed/$songDuration*100)>50" | bc) -eq 1 ] &&
+#				[ "$rating" -ne 2 ]; then
+#			# scrobbler-helper is part of the Audio::Scrobble package at cpan
+#			# "pia" is the last.fm client identifier of "pianobar", don't use
+#			# it for anything else, please
+#			scrobbler-helper -P pia -V 1.0 "$title" "$artist" "$album" "" "" "" "$((songDuration/1000))" &
+#		fi
+#		;;
+
+	songlove)
+#		kdialog --title pianobar --passivepopup "LOVING '$title' by '$artist' on '$album' on station '$stationName'" 10
+		#echo 'naughty.notify({title = "PianoBar", text = "Loved: '"$title"' by '"$artist"'"})' | awesome-client
+#		printf -v var 'naughty.notify({title = "Loved Song", text = "%s by %s", icon="%s", timeout = 5, icon_size=100,})' "$title" "$artist" "$HOME/.config/pianobar/image.jpg"
+#		echo $var | awesome-client
+		notify-send --icon="$HOME/.config/pianobar/image.jpg" "Loved Song" "$title"
+		;;
+
+	songshelf)
+#		kdialog --title pianobar --passivepopup "SHELVING '$title' by '$artist' on '$album' on station '$stationName'" 10
+		#echo 'naughty.notify({title = "PianoBar", text = "Shelved: '"$title"' by '"$artist"'"})' | awesome-client
+		#printf -v var 'naughty.notify({title = "Shelved Song", text = "%s by %s", icon="%s", timeout = 5, icon_size=100,})' "$title" "$artist" "$HOME/.config/pianobar/image.jpg"
+		#echo $var | awesome-client
+		notify-send --icon="$HOME/.config/pianobar/image.jpg" "Shelved Song" "$title"
+		;;
+
+	songban)
+#		kdialog --title pianobar --passivepopup "BANNING '$title' by '$artist' on '$album' on station '$stationName'" 10
+		#echo 'naughty.notify({title = "PianoBar", text = "Banned: '"$title"' by '"$artist"'"})' | awesome-client
+		#printf -v var 'naughty.notify({title = "Banned Song", text = "%s by %s", icon="%s", timeout = 5, icon_size=100,})' "$title" "$artist" "$HOME/.config/pianobar/image.jpg"
+		#echo $var | awesome-client
+		notify-send --icon="$HOME/.config/pianobar/image.jpg" "Banned Song" "$title"
+		;;
+
+	songbookmark)
+#		kdialog --title pianobar --passivepopup "BOOKMARKING '$title' by '$artist' on '$album'" 10
+		#echo 'naughty.notify({title = "PianoBar", text = "Bookmarked song: '"$title"' by '"$artist" '"})' | awesome-client
+		#printf -v var 'naughty.notify({title = "Bookmarked Song", text = "%s by %s", icon="%s", timeout = 5, icon_size=100,})' "$title" "$artist" "$HOME/.config/pianobar/image.jpg"
+		#echo $var | awesome-client
+		notify-send --icon="$HOME/.config/pianobar/image.jpg" "Bookmarked Song" "$title"
+		;;
+
+	artistbookmark)
+#		kdialog --title pianobar --passivepopup "BOOKMARKING '$artist'" 10
+		#echo 'naughty.notify({title = "PianoBar", text = "Bookmarked artist: '"$artist"'"})' | awesome-client
+		#printf -v var 'naughty.notify({title = "Bookmarked Artist", text = "%s", icon="%s", timeout = 5, icon_size=100,})' "$artist" "$HOME/.config/pianobar/image.jpg"
+		#echo $var | awesome-client
+		notify-send --icon="$HOME/.config/pianobar/image.jpg" "Bookmarked Artist" "$title"
+		;;
+
+	*)
+		if [ "$pRet" -ne 1 ]; then
+			#echo "naughty.notify({title = \"pianobar\", text = \"$1 failed: $pRetStr\"})" | awesome-client -
+#			kdialog --title pianobar --passivepopup "$1 failed: $pRetStr"
+		elif [ "$wRet" -ne 1 ]; then
+			#echo "naughty.notify({title = \"pianobar\", text = \"$1 failed: Network error: $wRetStr\"})" | awesome-client -
+#			kdialog --title pianobar --passivepopup "$1 failed: Network error: $wRetStr"
+		fi
+		;;
+esac
+} &>/dev/null # suppresses all output. Comment this out when debugging!

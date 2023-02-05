@@ -1,0 +1,6 @@
+address=localhost
+#enable_auth=true
+#username=line6
+#password=<passwd>
+#private_key_file=/home/line6/.config/wayvnc/key.pem
+#certificate_file=/home/line6/.config/wayvnc/cert.pem

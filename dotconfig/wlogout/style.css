@@ -16,45 +16,45 @@ button {
 }
 
 button:hover {
-    background-color: rgba(49, 50, 68, 0.1);
+    background-color: rgba(5, 14, 179, 0.171);
 }
 
 button:focus {
-    background-color: #cba6f7;
-    color: #1e1e2e;
+    background-color: rgba(5, 14, 179, 0.171);
+    /* color: #1e1e2e; */
 }
 
 #lock {
     background-image: image(url("./lock.png"));
 }
-#lock:focus {
+/* #lock:focus {
     background-image: image(url("./lock-hover.png"));
-}
+} */
 
 #logout {
     background-image: image(url("./logout.png"));
 }
-#logout:focus {
+/* #logout:focus {
     background-image: image(url("./logout-hover.png"));
-}
+} */
 
 #suspend {
     background-image: image(url("./sleep.png"));
 }
-#suspend:focus {
+/* #suspend:focus {
     background-image: image(url("./sleep-hover.png"));
-}
+} */
 
 #shutdown {
     background-image: image(url("./power.png"));
 }
-#shutdown:focus {
+/* #shutdown:focus {
     background-image: image(url("./power-hover.png"));
-}
+} */
 
 #reboot {
     background-image: image(url("./restart.png"));
 }
-#reboot:focus {
+/* #reboot:focus {
     background-image: image(url("./restart-hover.png"));
-}
+} */
