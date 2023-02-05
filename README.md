@@ -1,7 +1,12 @@
 # Hyprland Linux Configuration
 
+### Dunst Notifications, Rofi Side Launcher
 ![image](https://user-images.githubusercontent.com/58751387/216806720-f36a74ff-6b08-4842-aa8c-7603c2430375.png)
+### Transparent terminals with customized zsh prompt and extensions
 ![image](https://user-images.githubusercontent.com/58751387/216806870-e07a3b1b-e138-44fa-a9cf-197c783c7296.png)
+### Rounded windows, floating windows and scratchpad available
+![image](https://user-images.githubusercontent.com/58751387/216808036-bf6e57f9-a58f-429f-be80-ceb421f9ec79.png)
+
 
 ## Install
 * Use the Graphical Installer for Arch (Gnome one is fine)
