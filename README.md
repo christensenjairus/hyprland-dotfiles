@@ -48,7 +48,7 @@ ttf-font-awesome-5
 ```bash
 yay -S base-devel vim git wget curl qemu-guest-agent zsh      \
 bitwarden discord slack-desktop-wayland joplin-desktop        \
-firefox brave-bin deja-dup timeshift dropbox nextcloud-client \
+firefox zoom deja-dup timeshift dropbox nextcloud-client      \
 showmethekey teams-for-linux visual-studio-code-bin           \
 oh-my-zsh-git  oh-my-zsh-plugin-syntax-highlighting           \
 oh-my-zsh-plugin-autosuggestions docker docker-compose        \
@@ -59,7 +59,7 @@ ttf-meslo-nerd-font-powerlevel10k lolcat blueman bluez-utils  \
 media-control-indicator-git mpris-proxy-service wdisplays     \
 onedrivegui-git onedrive_tray-git metasploit postgresql nmap  \
 wayvnc obs-studio v4l2loopback-dkms linux-headers wlrobs gimp \
-burpsuite wl-clipboard-history-git wlsunset bpytop lf zoom    \
+burpsuite wl-clipboard-history-git wlsunset bpytop lf         \
 grub-btrfs timeshift-autosnap inotify-tools terminator
 ```
 
