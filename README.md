@@ -67,6 +67,11 @@ btrfs-grub timeshift-autosnap inotify-tools
 * Clone this repo
 * Paste the folders in `dotconfig` in your own `~/.config` folder
 
+### Turn on SDDM
+```bash
+sudo systemctl disable gdm && sudo systemctl enable sddm
+```
+
 ### Reboot
 * Reboot
 * Log into hyprland via SDDM
