@@ -5,7 +5,7 @@
 ## Install
 * Use the Graphical Installer for Arch (Gnome one is fine)
 * Use swap + hibernate
-* Use btrfs file system
+* Use ~~btrfs~~ ext4 file system
 
 ### Update
 You may or may not need to run this if pacman updates aren't working
@@ -48,7 +48,7 @@ ttf-font-awesome-5 otf-font-awesome
 ```bash
 yay -S base-devel vim git wget curl qemu-guest-agent zsh      \
 bitwarden discord slack-desktop-wayland joplin-desktop        \
-firefox zoom deja-dup timeshift dropbox nextcloud-client      \
+firefox zoom deja-dup dropbox nextcloud-client      \
 showmethekey teams-for-linux visual-studio-code-bin           \
 docker docker-compose                                         \
 ttf-jetbrains-mono ttf-jetbrains-mono-nerd jetbrains-toolbox  \
@@ -59,7 +59,7 @@ media-control-indicator-git mpris-proxy-service wdisplays     \
 onedrivegui-git onedrive_tray-git metasploit postgresql nmap  \
 wayvnc obs-studio v4l2loopback-dkms linux-headers wlrobs gimp \
 burpsuite wl-clipboard-history-git wlsunset bpytop lf brave   \
-grub-btrfs timeshift-autosnap inotify-tools terminator tmux   \
+inotify-tools terminator tmux   \
 thefuck
 ```
 
@@ -123,11 +123,11 @@ sed -i 's/_THEME=\"robbyrussel\"/_THEME=\"powerlevel10k/powerlevel10k\"/g' ~/.zs
 ### OBS Studio Screen Sharing
 https://github.com/hw0lff/screen-share-sway
 
-### TimeShift BTRFS Shapshots and Automatic Grub Configuration
-Follow [this guide](https://www.lorenzobettini.it/2022/07/timeshift-and-grub-btrfs-in-linux-arch/)
+~~### TimeShift BTRFS Shapshots and Automatic Grub Configuration~~
+~~Follow [this guide](https://www.lorenzobettini.it/2022/07/timeshift-and-grub-btrfs-in-linux-arch/)~~
 
-~~### Uninstall xdg-desktop-portal
-Uninstall the version of `xdg-desktop-portal` you have installed by default. This could be `xdg-desktop-portal-wlr`, `xdg-desktop-portal-gnome`, or `xdg-desktop-portal-gtk`, among others.~~
+~~### Uninstall xdg-desktop-portal~~
+~~Uninstall the version of `xdg-desktop-portal` you have installed by default. This could be `xdg-desktop-portal-wlr`, `xdg-desktop-portal-gnome`, or `xdg-desktop-portal-gtk`, among others.~~
 
 ## Gotchas
 
@@ -137,6 +137,6 @@ Uninstall the version of `xdg-desktop-portal` you have installed by default. Thi
 ## Work In Progress
 
 - [ ] Better way to screenshare than OBS-Studio virtual camera (although, this isn't bad)
-- [ ] BTRFS Snapshots in Grub menu
+~~- [ ] Snapshots in Grub menu~~
 - [ ] WayVNC working in virtual workspace
 - [X] Brave not steal all links. Basically, how do I set the default browser?
