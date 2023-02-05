@@ -90,7 +90,7 @@ sudo systemctl disable gdm && sudo systemctl enable sddm
 
 ### Change your default shell to ZSH
 ```bash
-sudo usermod --shell /bin/bash tecmint
+sudo usermod --shell /bin/zsh <username>
 ```
 
 ### Installing oh-my-zsh
