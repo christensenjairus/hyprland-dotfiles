@@ -65,7 +65,7 @@ media-control-indicator-git mpris-proxy-service wdisplays zoom\
 onedrivegui-git onedrive_tray-git metasploit postgresql nmap  \
 wayvnc obs-studio v4l2loopback-dkms linux-headers lwrobs gimp \
 burpsuite wl-clipboard-history-git wlsunset bpytop lf         \
-btrfs-grub timeshift-autosnap
+btrfs-grub timeshift-autosnap inotify-tools
 ```
 Installing oh-my-zsh
 ```bash
@@ -85,6 +85,9 @@ sudo usermod -a -G autologin <username>
 ```
 ### OBS Studio Screen Sharing
 https://github.com/hw0lff/screen-share-sway
+
+### TimeShift BTRFS Shapshots and Automatic Grub Configuration
+Follow [this guide](https://www.lorenzobettini.it/2022/07/timeshift-and-grub-btrfs-in-linux-arch/)
 
 ## Gotchas
 
