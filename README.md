@@ -106,7 +106,8 @@ git clone http://github.com/robbyrussell/oh-my-zsh ~/.oh-my-zsh
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
-Then, replace your current `~/.zshrc` file with the one in this repo
+Then, replace your current `~/.zshrc` file with the one in this repo. 
+Copy over `.p10k.zsh` to your home folder as well.
 
 
 ### Powerlevel10k
