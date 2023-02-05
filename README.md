@@ -29,11 +29,6 @@ cd yay-bin
 makepkg -si
 ```
 
-### Powerlevel10k
-```bin
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-```
-
 ### Packages
 
 ``` bash
@@ -67,9 +62,23 @@ wayvnc obs-studio v4l2loopback-dkms linux-headers lwrobs gimp \
 burpsuite wl-clipboard-history-git wlsunset bpytop lf         \
 btrfs-grub timeshift-autosnap inotify-tools
 ```
-Installing oh-my-zsh
+
+### Copy these files
+* Clone this repo
+* Paste the folders in `dotconfig` in your own `~/.config` folder
+
+### Reboot
+* Reboot
+* Log into hyprland via SDDM
+
+### Installing oh-my-zsh
 ```bash
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+### Powerlevel10k
+```bin
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 
 ~~### Uninstall xdg-desktop-portal
