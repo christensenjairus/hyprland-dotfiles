@@ -12,7 +12,7 @@ You may or may not need to run this if pacman updates aren't working
 ```bash
 sudo find /var/cache/pacman/pkg/ -iname "*.part" -delete
 sudo pacman -Syc
-sudo pacman -Sy archlinux-keyring
+sudo pacman -Sy archlinux-keyring base-devel
 sudo pacman-key --init
 sudo pacman-key --delete 91FFE0700E80619CEB73235CA88E23E377514E00
 sudo pacman-key --populate archlinux
@@ -20,17 +20,14 @@ sudo pacman -Syyyuuu
 ```
 
 ### Yay
-
 Run as user NOT ROOT!
-
 ```
-# Before this you need base-devel installed
 git clone https://aur.archlinux.org/yay-bin
 cd yay-bin
 makepkg -si
 ```
 
-### Packages
+### Install Hyprland/Sway/Wayland Packages
 
 ``` bash
 yay -S hyprland-bin polkit-gnome ffmpeg neovim viewnior       \
@@ -45,7 +42,7 @@ xdg-desktop-portal-hyprland-git qt5-wayland qt6-wayland       \
 ttf-font-awesome-5 otf-font-awesome
 ```
 
-### My Other Packages
+### Install Quality of Life Packages
 ```bash
 yay -S base-devel vim git wget curl qemu-guest-agent zsh      \
 bitwarden discord slack-desktop-wayland joplin-desktop        \
