@@ -107,6 +107,7 @@ Then set the theme in `.zshrc` if not done already
 sed -i 's/_THEME=\"robbyrussel\"/_THEME=\"powerlevel10k/powerlevel10k\"/g' ~/.zshrc
 ```
 
+# Things to Know
 ### OBS Studio Screen Sharing
 https://github.com/hw0lff/screen-share-sway
 
@@ -123,14 +124,6 @@ Uninstall the version of `xdg-desktop-portal` you have installed by default. Thi
 
 ## Work In Progress
 
-- [ ] Help Popup with Hotkey
-- [ ] Wayland guide for nwg-look, wlr-randr, etc.
-- [ ] Synergy Workaround - Looking at waynergy or just using KVM
-- [ ] Gamescope Addition - Adding more parity with Steamdeck features
-- [x] More Customizations for Waybar - Battery, Backlight, etc.
-- [ ] Auto-configuration - Long term goal
-
-## Sources used making these
-
-- Official Hyprland Github <https://github.com/hyprwm/Hyprland>
-- Linux Mobiles Hyprland dot files <https://github.com/linuxmobile/hyprland-dots>
+[] Better way to screenshare than OBS-Studio virtual camera (although, this isn't bad)
+[] BTRFS Snapshots in Grub menu
+[] WayVNC working in virtual workspace
