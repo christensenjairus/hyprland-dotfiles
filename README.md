@@ -102,8 +102,9 @@ sudo usermod --shell /bin/zsh <username>
 
 ### Installing oh-my-zsh
 ```bash
-sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone http://github.com/robbyrussell/oh-my-zsh ~/.oh-my-zsh
 ```
+Then, replace your current `~/.zshrc` file with the one in this repo
 
 ### Powerlevel10k
 ```bin
