@@ -1,6 +1,7 @@
 # Hyprland Linux Configuration
 
-![Screenshot](https://github.com/ChrisTitusTech/hyprland-titus/raw/main/hyprland-titus.png)
+![image](https://user-images.githubusercontent.com/58751387/216806720-f36a74ff-6b08-4842-aa8c-7603c2430375.png)
+![image](https://user-images.githubusercontent.com/58751387/216806870-e07a3b1b-e138-44fa-a9cf-197c783c7296.png)
 
 ## Install
 * Use the Graphical Installer for Arch (Gnome one is fine)
