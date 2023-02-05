@@ -127,3 +127,4 @@ Uninstall the version of `xdg-desktop-portal` you have installed by default. Thi
 - [ ] Better way to screenshare than OBS-Studio virtual camera (although, this isn't bad)
 - [ ] BTRFS Snapshots in Grub menu
 - [ ] WayVNC working in virtual workspace
+- [ ] Brave not steal all links. Basically, how do I set the default browser?
