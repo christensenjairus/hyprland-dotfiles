@@ -50,8 +50,7 @@ yay -S base-devel vim git wget curl qemu-guest-agent zsh      \
 bitwarden discord slack-desktop-wayland joplin-desktop        \
 firefox zoom deja-dup timeshift dropbox nextcloud-client      \
 showmethekey teams-for-linux visual-studio-code-bin           \
-oh-my-zsh-git  oh-my-zsh-plugin-syntax-highlighting           \
-oh-my-zsh-plugin-autosuggestions docker docker-compose        \
+docker docker-compose                                         \
 ttf-jetbrains-mono ttf-jetbrains-mono-nerd jetbrains-toolbox  \
 pithos spotify plexamp-appimage rofi-emoji google-chrome      \
 pianobar github-desktop-bin tlp tlpui zsh-theme-powerlevel10k \
@@ -60,7 +59,8 @@ media-control-indicator-git mpris-proxy-service wdisplays     \
 onedrivegui-git onedrive_tray-git metasploit postgresql nmap  \
 wayvnc obs-studio v4l2loopback-dkms linux-headers wlrobs gimp \
 burpsuite wl-clipboard-history-git wlsunset bpytop lf brave   \
-grub-btrfs timeshift-autosnap inotify-tools terminator
+grub-btrfs timeshift-autosnap inotify-tools terminator tmux   \
+thefuck
 ```
 
 ### Copy these files
@@ -103,8 +103,11 @@ sudo usermod --shell /bin/zsh <username>
 ### Installing oh-my-zsh
 ```bash
 git clone http://github.com/robbyrussell/oh-my-zsh ~/.oh-my-zsh
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 Then, replace your current `~/.zshrc` file with the one in this repo
+
 
 ### Powerlevel10k
 ```bin
