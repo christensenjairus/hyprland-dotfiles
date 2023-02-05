@@ -126,6 +126,12 @@ sudo systemctl disable gdm && sudo systemctl enable sddm
 ### Desktop Portal (for screensharing)
 Remove `xdg-desktop-portal-gnome` and `xdg-desktop-portal-gtk` and whichever other ones are installed, leaving only `xdg-desktop-portal` and `xdg-desktop-portal-hyprland`. These two will be started on boot by `~/.config/hypr/hyprland.conf`, no need to enable them via systemd.
 
+##### Downgrade `xdg-desktop-portal` to `1.14.6` for now 
+(as of Feb 5th, 2023)
+```bash
+sudo downgrade xdg-desktop-portal
+```
+
 ### Reboot
 * Reboot
 * Log into hyprland via SDDM
