@@ -124,6 +124,6 @@ Uninstall the version of `xdg-desktop-portal` you have installed by default. Thi
 
 ## Work In Progress
 
-[] Better way to screenshare than OBS-Studio virtual camera (although, this isn't bad)
-[] BTRFS Snapshots in Grub menu
-[] WayVNC working in virtual workspace
+- [ ] Better way to screenshare than OBS-Studio virtual camera (although, this isn't bad)
+- [ ] BTRFS Snapshots in Grub menu
+- [ ] WayVNC working in virtual workspace
