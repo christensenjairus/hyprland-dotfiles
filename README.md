@@ -72,8 +72,8 @@ Installing oh-my-zsh
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-### Uninstall xdg-desktop-portal
-Uninstall the version of `xdg-desktop-portal` you have installed by default. This could be `xdg-desktop-portal-wlr`, `xdg-desktop-portal-gnome`, or `xdg-desktop-portal-gtk`, among others.
+~~### Uninstall xdg-desktop-portal
+Uninstall the version of `xdg-desktop-portal` you have installed by default. This could be `xdg-desktop-portal-wlr`, `xdg-desktop-portal-gnome`, or `xdg-desktop-portal-gtk`, among others.~~
 
 # Autologin
 Paste this into `/etc/sddm.conf.d/autologin.conf` (you may have to make this directory)
