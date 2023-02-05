@@ -45,7 +45,8 @@ nwg-look-bin nordic-theme papirus-icon-theme dunst            \
 hyprpicker-git noto-fonts noto-fonts-emoji                    \
 noto-fonts-extra unicode-character-database                   \
 xdg-desktop-portal-hyprland-git qt5-wayland qt6-wayland       \
-ttf-font-awesome-5 otf-font-awesome swayidle
+ttf-font-awesome-5 otf-font-awesome swayidle libmysofa        \
+pipewire-git
 ```
 
 ### Install Quality of Life Packages
