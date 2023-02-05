@@ -54,7 +54,7 @@ yay -S base-devel vim git wget curl qemu-guest-agent zsh      \
 bitwarden discord slack-desktop-wayland joplin-desktop        \
 firefox zoom deja-dup dropbox nextcloud-client brave-bin      \
 showmethekey teams-for-linux visual-studio-code-bin           \
-docker docker-compose                                         \
+docker docker-compose plex-media-player tree                  \
 ttf-jetbrains-mono ttf-jetbrains-mono-nerd jetbrains-toolbox  \
 pithos spotify plexamp-appimage rofi-emoji google-chrome      \
 pianobar github-desktop-bin tlp tlpui zsh-theme-powerlevel10k \
