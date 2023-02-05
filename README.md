@@ -58,13 +58,14 @@ showmethekey teams-for-linux visual-studio-code-bin           \
 oh-my-zsh-git  oh-my-zsh-plugin-syntax-highlighting           \
 oh-my-zsh-plugin-autosuggestions docker docker-compose        \
 ttf-jetbrains-mono ttf-jetbrains-mono-nerd jetbrains-toolbox  \
-pithos spotify plexamp-appimage \
+pithos spotify plexamp-appimage rofi-emoji google-chrome      \
 pianobar github-desktop-bin tlp tlpui zsh-theme-powerlevel10k \
 ttf-meslo-nerd-font-powerlevel10k lolcat blueman bluez-utils  \
 media-control-indicator-git mpris-proxy-service wdisplays zoom\
 onedrivegui-git onedrive_tray-git metasploit postgresql nmap  \
 wayvnc obs-studio v4l2loopback-dkms linux-headers lwrobs gimp \
-burpsuite wl-clipboard-history-git wlsunset bpytop lf
+burpsuite wl-clipboard-history-git wlsunset bpytop lf         \
+
 ```
 Installing oh-my-zsh
 ```bash
