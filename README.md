@@ -101,6 +101,17 @@ Then change your default shell to ZSH
 sudo usermod --shell /bin/zsh <username>
 ```
 
+### Pianobar Driver
+Change `/etc/libao.conf` to read
+```bash
+default_driver=pulse
+```
+instead of
+```bash
+default_driver=alsa
+dev=default
+```
+
 ### Turn on SDDM
 ```bash
 sudo systemctl disable gdm && sudo systemctl enable sddm
