@@ -72,7 +72,7 @@ Paste this into `/etc/sddm.conf.d/autologin.conf` (you may have to make this dir
 ```bash
 [Autologin]
 User=<username>
-Session=Hyprland
+Session=hyprland
 ```
 Then, add yourself to the autologin group with
 ```bash
