@@ -88,6 +88,11 @@ sudo systemctl disable gdm && sudo systemctl enable sddm
 * Reboot
 * Log into hyprland via SDDM
 
+### Change your default shell to ZSH
+```bash
+sudo usermod --shell /bin/bash tecmint
+```
+
 ### Installing oh-my-zsh
 ```bash
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
