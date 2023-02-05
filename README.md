@@ -48,7 +48,7 @@ ttf-font-awesome-5
 ```bash
 yay -S base-devel vim git wget curl qemu-guest-agent zsh      \
 bitwarden discord slack-desktop-wayland joplin-desktop        \
-firefox brave deja-dup timeshift dropbox nextcloud-client     \
+firefox brave-bin deja-dup timeshift dropbox nextcloud-client \
 showmethekey teams-for-linux visual-studio-code-bin           \
 oh-my-zsh-git  oh-my-zsh-plugin-syntax-highlighting           \
 oh-my-zsh-plugin-autosuggestions docker docker-compose        \
