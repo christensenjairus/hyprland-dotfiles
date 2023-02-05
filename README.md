@@ -16,6 +16,7 @@ sudo pacman -Sy archlinux-keyring
 sudo pacman-key --init
 sudo pacman-key --delete 91FFE0700E80619CEB73235CA88E23E377514E00
 sudo pacman-key --populate archlinux
+sudo pacman -Syyyuuu
 ```
 
 ### Yay
