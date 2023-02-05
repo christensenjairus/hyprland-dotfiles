@@ -67,6 +67,18 @@ btrfs-grub timeshift-autosnap inotify-tools
 * Clone this repo
 * Paste the folders in `dotconfig` in your own `~/.config` folder
 
+### Autologin via SDDM
+Paste this into `/etc/sddm.conf.d/autologin.conf` (you may have to make this directory)
+```bash
+[Autologin]
+User=<username>
+Session=Hyprland
+```
+Then, add yourself to the autologin group with
+```bash
+sudo usermod -a -G autologin <username>
+```
+
 ### Turn on SDDM
 ```bash
 sudo systemctl disable gdm && sudo systemctl enable sddm
@@ -86,26 +98,14 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 
-~~### Uninstall xdg-desktop-portal
-Uninstall the version of `xdg-desktop-portal` you have installed by default. This could be `xdg-desktop-portal-wlr`, `xdg-desktop-portal-gnome`, or `xdg-desktop-portal-gtk`, among others.~~
-
-# Autologin
-Paste this into `/etc/sddm.conf.d/autologin.conf` (you may have to make this directory)
-```bash
-[Autologin]
-User=<username>
-Session=Hyprland
-```
-Then, add yourself to the autologin group with
-```bash
-sudo usermod -a -G autologin <username>
-```
-
 ### OBS Studio Screen Sharing
 https://github.com/hw0lff/screen-share-sway
 
 ### TimeShift BTRFS Shapshots and Automatic Grub Configuration
 Follow [this guide](https://www.lorenzobettini.it/2022/07/timeshift-and-grub-btrfs-in-linux-arch/)
+
+~~### Uninstall xdg-desktop-portal
+Uninstall the version of `xdg-desktop-portal` you have installed by default. This could be `xdg-desktop-portal-wlr`, `xdg-desktop-portal-gnome`, or `xdg-desktop-portal-gtk`, among others.~~
 
 ## Gotchas
 
