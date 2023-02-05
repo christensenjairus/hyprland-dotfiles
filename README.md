@@ -104,18 +104,13 @@ sudo usermod --shell /bin/zsh <username>
 ### Installing oh-my-zsh
 ```bash
 git clone http://github.com/robbyrussell/oh-my-zsh ~/.oh-my-zsh
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 Then, replace your current `~/.zshrc` file with the one in this repo. 
 Copy over `.p10k.zsh` to your home folder as well.
-
-
-### Powerlevel10k
-```bin
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-```
-Then set the theme in `.zshrc` if not done already
+Then set the theme in `.zshrc` if not done already. (This shouldn't be necessary if you used my `.zshrc`)
 ```bash
 sed -i 's/_THEME=\"robbyrussel\"/_THEME=\"powerlevel10k/powerlevel10k\"/g' ~/.zshrc
 ```
@@ -138,6 +133,6 @@ https://github.com/hw0lff/screen-share-sway
 ## Work In Progress
 
 - [ ] Better way to screenshare than OBS-Studio virtual camera (although, this isn't bad)
-~~- [ ] Snapshots in Grub menu~~
+- [ ] ~~Snapshots in Grub menu~~
 - [ ] WayVNC working in virtual workspace
 - [X] Brave not steal all links. Basically, how do I set the default browser?
