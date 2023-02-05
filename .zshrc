@@ -451,6 +451,13 @@ fi
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+export SDL_VIDEODRIVER=wayland
+export QT_QPA_PLATFORM=wayland
+export XDG_CURRENT_DESKTOP=sway
+export XDG_SESSION_DESKTOP=sway
+#export GDK_BACKEND="wayland,x11"
+#export MOZ_ENABLE_WAYLAND=1
+
 alias vim="nvim"
 alias n="neofetch | lolcat"
 alias c="clear"

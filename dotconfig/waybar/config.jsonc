@@ -59,7 +59,7 @@
         //}
     },
     "custom/updates": {
-        "exec": "(pacman -Qu ; yay -Qua) | wc -l",
+        "exec": "if [ $((pacman -Qu ; yay -Qua) | wc -l) -gt 1 ]; then echo 'Updates: $((pacman -Qu ; yay -Qua) | wc -l)'; else echo '0'; fi", // increase to number of witheld packages
         "interval": 60,
         "format": " {}",
         "on-click": "terminator -p 'default - update'"
