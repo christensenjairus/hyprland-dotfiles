@@ -41,7 +41,7 @@ nwg-look-bin nordic-theme papirus-icon-theme dunst            \
 hyprpicker-git noto-fonts noto-fonts-emoji                    \
 noto-fonts-extra unicode-character-database                   \
 xdg-desktop-portal-hyprland-git qt5-wayland qt6-wayland       \
-ttf-font-awesome-5
+ttf-font-awesome-5 otf-font-awesome
 ```
 
 ### My Other Packages
