@@ -87,11 +87,12 @@ sudo usermod -a -G autologin <username>
 ```bash
 gnome-control-center
 ```
-Use this to set your default browser to Firefox instead of Brave.
+Use this (after installing Brave!) to set your default browser and pdf opener to Firefox instead of Brave.
 Also, turn apps to dark mode. (IDEK if this actually does anything) 
 
 ### Installing oh-my-zsh
 ```bash
+cd ~
 git clone http://github.com/robbyrussell/oh-my-zsh ~/.oh-my-zsh
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
