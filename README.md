@@ -11,7 +11,7 @@
 ## Install
 * Use the Graphical Installer for Arch (Gnome one is fine)
 * Use swap + hibernate
-* Use ~~btrfs~~ ext4 file system
+* Use btrfs file system
 
 ### Update
 You may or may not need to run this if pacman updates aren't working
@@ -63,7 +63,8 @@ media-control-indicator-git mpris-proxy-service wdisplays     \
 onedrivegui-git onedrive_tray-git metasploit postgresql nmap  \
 wayvnc obs-studio v4l2loopback-dkms linux-headers wlrobs gimp \
 burpsuite wl-clipboard-history-git wlsunset bpytop lf         \
-inotify-tools terminator tmux thefuck downgrade remmina
+inotify-tools terminator tmux thefuck downgrade remmina       \
+timeshift timeshift-autosnap grub-btrfs  
 ```
 
 ### Copy these files
@@ -132,6 +133,13 @@ Remove `xdg-desktop-portal-gnome` and `xdg-desktop-portal-gtk` and whichever oth
 sudo downgrade xdg-desktop-portal
 ```
 
+### TimeShift BTRFS Shapshots and Automatic Grub Configuration
+* Open TimeShift and configure it
+* Take your first btrfs snapshot
+* Run the alias `reinstallgrub` from the custom `.zshrc` file (if your system ever wont boot, the command this alias holds will fix it. You'll just have to chroot from a bootable usb first)
+
+Follow [this guide for more info on how to set this up correctly](https://www.lorenzobettini.it/2022/07/timeshift-and-grub-btrfs-in-linux-arch/)
+
 ### Reboot
 * Reboot
 * Log into hyprland via SDDM
@@ -139,12 +147,6 @@ sudo downgrade xdg-desktop-portal
 # Things to Know
 ### OBS Studio Screen Sharing
 https://github.com/hw0lff/screen-share-sway
-
-~~### TimeShift BTRFS Shapshots and Automatic Grub Configuration~~
-~~Follow [this guide](https://www.lorenzobettini.it/2022/07/timeshift-and-grub-btrfs-in-linux-arch/)~~
-
-~~### Uninstall xdg-desktop-portal~~
-~~Uninstall the version of `xdg-desktop-portal` you have installed by default. This could be `xdg-desktop-portal-wlr`, `xdg-desktop-portal-gnome`, or `xdg-desktop-portal-gtk`, among others.~~
 
 ## Gotchas
 
