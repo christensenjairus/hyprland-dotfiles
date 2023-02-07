@@ -90,7 +90,7 @@ Use the following command, or if still in gnome, just open the settings app.
 ```bash
 gnome-control-center
 ```
-Use this (after installing Brave!) to set your default browser and pdf opener to Firefox instead of Brave.
+Under `Default Applications`, use this program (after installing Brave!) to set your default browser to Firefox and your photo opener to Viewnoir.
 Also, turn apps to dark mode. (IDEK if this actually does anything) 
 
 ### Installing oh-my-zsh
