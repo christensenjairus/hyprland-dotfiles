@@ -461,3 +461,4 @@ export XDG_SESSION_DESKTOP=sway
 alias vim="nvim"
 alias n="neofetch | lolcat"
 alias c="clear"
+alias reinstallgrub="sudo grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=grub && sudo grub-mkconfig -o /boot/grub/grub.cfg"

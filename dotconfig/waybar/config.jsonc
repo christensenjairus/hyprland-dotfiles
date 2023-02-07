@@ -11,12 +11,15 @@
         "custom/updates",
         "wlr/workspaces"
     ],
-    "modules-center": ["hyprland/window"],
+    "modules-center": [
+        "hyprland/window"
+    ],
     "modules-right": [
         "tray",
         // "custom/language",
         // "battery",
         // "backlight",
+        "idle_inhibitor",
         "pulseaudio",
         "pulseaudio#microphone",
         "clock"
@@ -126,5 +129,12 @@
         "on-scroll-up": "pamixer --default-source -i 5",
         "on-scroll-down": "pamixer --default-source -d 5",
         "scroll-step": 5
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": " On",
+            "deactivated": " Off"
+        }
     }
 }

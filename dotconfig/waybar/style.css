@@ -55,6 +55,7 @@ tooltip {
 #window,
 #clock,
 #battery,
+#idle_inhibitor,
 #pulseaudio,
 #network,
 #workspaces,
@@ -118,6 +119,14 @@ tooltip {
     color: #eb8885;
     border-left: 0px;
     border-right: 0px;
+}
+
+#idle_inhibitor {
+    color: rgb(62, 74, 238);
+    border-left: 0px;
+    border-right: 0px;
+    margin-right: 10px;
+    border-radius: 10px 10px 10px 10px;
 }
 
 #pulseaudio {
