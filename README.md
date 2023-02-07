@@ -141,6 +141,19 @@ sudo downgrade xdg-desktop-portal
 ### TimeShift BTRFS Shapshots and Automatic Grub Configuration
 * Open TimeShift and configure it
 * Take your first btrfs snapshot
+* Now, edit the grub-btrfs daemon with the following
+```bash
+sudo systemctl edit --full grub-btrfsd
+```
+* Replace the end of the following line
+```bash
+# before
+ExecStart=/usr/bin/grub-btrfsd --syslog /.snapshots
+
+# after 
+ExecStart=/usr/bin/grub-btrfsd --syslog --timeshift-auto
+```
+* Restart the daemon with `sudo systemctl restart grub-btrfsd` and watch this status as you create another timeshift backup. Verify that it has updated grub.
 * Run the alias `reinstallgrub` from the custom `.zshrc` file (if your system ever wont boot, the command this alias holds will fix it. You'll just have to chroot from a bootable usb first)
 
 Follow [this guide for more info on how to set this up correctly](https://www.lorenzobettini.it/2022/07/timeshift-and-grub-btrfs-in-linux-arch/)
