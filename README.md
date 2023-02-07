@@ -9,9 +9,9 @@
 
 
 ## Install
-* Use the Graphical Installer for Arch (Gnome one is fine)
+* Download and use the `Gnome Edition` Graphical Installer for Arch found [here](https://archlinuxgui.in/download.html)
 * Use swap + hibernate
-* Use btrfs file system
+* Use btrfs file system (so you can take system snapshots!)
 
 ### Update
 You may or may not need to run this if pacman updates aren't working
@@ -70,6 +70,8 @@ timeshift timeshift-autosnap grub-btrfs
 ### Copy these files
 * Clone this repo
 * Paste the folders in `dotconfig` in your own `~/.config` folder
+* Copy over `~/.zshrc` to your home folder.
+* Copy over `.p10k.zsh` to your home folder as well
 
 ### Autologin via SDDM
 Paste this into `/etc/sddm.conf.d/autologin.conf` (you may have to make this directory)
@@ -84,6 +86,7 @@ sudo usermod -a -G autologin <username>
 ```
 
 ### Change browser
+Use the following command, or if still in gnome, just open the settings app.
 ```bash
 gnome-control-center
 ```
@@ -98,8 +101,6 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
-Then, replace your current `~/.zshrc` file with the one in this repo. 
-Copy over `.p10k.zsh` to your home folder as well.
 Then set the theme in `.zshrc` if not done already. (This shouldn't be necessary if you used my `.zshrc`)
 ```bash
 sed -i 's/_THEME=\"robbyrussel\"/_THEME=\"powerlevel10k/powerlevel10k\"/g' ~/.zshrc
@@ -127,9 +128,12 @@ sudo systemctl disable gdm && sudo systemctl enable sddm
 
 ### Desktop Portal (for screensharing)
 Remove `xdg-desktop-portal-gnome` and `xdg-desktop-portal-gtk` and whichever other ones are installed, leaving only `xdg-desktop-portal` and `xdg-desktop-portal-hyprland`. These two will be started on boot by `~/.config/hypr/hyprland.conf`, no need to enable them via systemd.
+```bash
+yay -R xdg-desktop-portal-gnome xdg-desktop-portal-gtk
+```
 
-##### Downgrade `xdg-desktop-portal` to `1.14.6` for now 
-(as of Feb 5th, 2023)
+##### Downgrade `xdg-desktop-portal` to `1.14.6` (for now) 
+Selecting windows to screen share is broken in the current version (as of Feb 5th, 2023)
 ```bash
 sudo downgrade xdg-desktop-portal
 ```
