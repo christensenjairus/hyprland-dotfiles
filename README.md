@@ -67,7 +67,9 @@ onedrivegui-git onedrive_tray-git metasploit postgresql nmap  \
 wayvnc obs-studio v4l2loopback-dkms linux-headers wlrobs gimp \
 burpsuite wl-clipboard-history-git wlsunset bpytop lf         \
 inotify-tools terminator tmux thefuck downgrade remmina       \
-timeshift timeshift-autosnap grub-btrfs  
+timeshift timeshift-autosnap grub-btrfs networkmanager-pptp   \
+networkmanager-openconnect networkmanager-openvpn             \
+networkmanager-vpnc
 ```
 
 ### Copy these files
