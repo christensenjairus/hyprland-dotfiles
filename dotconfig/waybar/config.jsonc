@@ -16,9 +16,9 @@
     ],
     "modules-right": [
         "tray",
-        // "custom/language",
-        // "battery",
-        // "backlight",
+        "custom/language",
+        "battery",
+        "backlight",
         "idle_inhibitor",
         "pulseaudio",
         "pulseaudio#microphone",
@@ -38,16 +38,29 @@
         "format": "{icon}",
         "format-icons": {
             "1": "L1",
-            "2": "L2",
+	    "2": "L2",
             "3": "L3",
             "4": "L4",
             "5": "L5",
             "6": "R1",
-            "7": "R2",
+	    "7": "R2",
             "8": "R3",
             "9": "R4",
             "10": "R5"
         }//,
+	//"format-icons": {
+        //    "1": "1",
+        //    "2": "2",
+        //    "3": "3",
+        //    "4": "4",
+        //   "5": "5",
+        //    "6": "6",
+        //    "7": "7",
+        //    "8": "8",
+        //    "9": "9",
+        //    "10": "10"
+        //}//,
+
         //"persistent_workspaces": {
         //    "1": [],
         //    "2": [],
@@ -62,7 +75,7 @@
         //}
     },
     "custom/updates": {
-        "exec": "if [ $((pacman -Qu ; yay -Qua) | wc -l) -gt 1 ]; then echo 'Updates: $((pacman -Qu ; yay -Qua) | wc -l)'; else echo '0'; fi", // increase to number of witheld packages
+        "exec": "if [ $((pacman -Qu ; yay -Qua) | wc -l) -gt 1 ]; then echo Updates: $((pacman -Qu ; yay -Qua) | wc -l); else echo '0'; fi", // increase to number of witheld packages
         "interval": 60,
         "format": " {}",
         "on-click": "terminator -p 'default - update'"

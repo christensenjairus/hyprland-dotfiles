@@ -92,6 +92,9 @@ tooltip {
     color: #f38ba8;
     border-left: 0px;
     border-right: 0px;
+    margin-right: 10px;
+    border-radius: 10px 10px 10px 10px;
+
 }
 
 #custom-updates {
@@ -147,9 +150,18 @@ tooltip {
 
 #battery {
     color: #a6e3a1;
-    border-radius: 0 10px 10px 0;
-    margin-right: 10px;
     border-left: 0px;
+    border-right: 0px;
+    margin-right: 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#backlight {
+    /*color: #a6e3a1;*/
+    border-left: 0px;
+    border-right: 0px;
+    margin-right: 10px;
+    border-radius: 10px 10px 10px 10px;
 }
 
 #custom-weather {
