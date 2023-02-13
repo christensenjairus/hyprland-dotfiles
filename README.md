@@ -45,7 +45,10 @@ nwg-look-bin nordic-theme papirus-icon-theme dunst            \
 hyprpicker-git noto-fonts noto-fonts-emoji                    \
 noto-fonts-extra unicode-character-database                   \
 xdg-desktop-portal-hyprland-git qt5-wayland qt6-wayland       \
-ttf-font-awesome-5 otf-font-awesome swayidle mpd
+ttf-font-awesome-5 otf-font-awesome swayidle mpd              \
+wpa_supplicant wireless_tools networkmanager modemmanager     \
+mobile-broadband-provider-info usb_modeswitch rp-pppoe        \
+nm-connection-editor network-manager-applet
 ```
 
 ### Install Quality of Life Packages
@@ -124,6 +127,13 @@ dev=default
 ### Turn on SDDM
 ```bash
 sudo systemctl disable gdm && sudo systemctl enable sddm
+```
+
+### Turn on NetworkManager
+```bash
+sudo systemctl enable --now NetworkManager.service
+sudo systemctl disable --now dhcpcd.service
+sudo systemctl enable --now wpa_supplicant.service
 ```
 
 ### Desktop Portal (for screensharing)
