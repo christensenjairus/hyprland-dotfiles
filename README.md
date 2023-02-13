@@ -48,7 +48,7 @@ xdg-desktop-portal-hyprland-git qt5-wayland qt6-wayland       \
 ttf-font-awesome-5 otf-font-awesome swayidle mpd              \
 wpa_supplicant wireless_tools networkmanager modemmanager     \
 mobile-broadband-provider-info usb_modeswitch rp-pppoe        \
-nm-connection-editor network-manager-applet
+nm-connection-editor network-manager-applet brightnessctl
 ```
 
 ### Install Quality of Life Packages
