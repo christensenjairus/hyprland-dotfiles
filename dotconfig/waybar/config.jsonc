@@ -99,9 +99,10 @@
     "backlight": {
         "device": "intel_backlight",
         "format": "{icon} {percent}%",
-        "format-icons": ["", "", ""],
-        "on-scroll-up": "brightnessctl set 1%+",
-        "on-scroll-down": "brightnessctl set 1%-",
+        //"format-icons": ["", "", ""],
+	"format-icons": ["💡"],
+        "on-scroll-up": "brightnessctl set 5%+",
+        "on-scroll-down": "brightnessctl set 5%-",
         "min-length": 6
     },
     "battery": {
@@ -114,7 +115,8 @@
         "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
         "format-alt": "{time} {icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", "", "", ""]
+        //"format-icons": ["", "", "", "", "", "", "", "", "", "", ""]
+	"format-icons": ["🔋"]
     },
     "pulseaudio": {
         "format": "{icon} {volume}%",
