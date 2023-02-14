@@ -86,13 +86,15 @@ case "$1" in
 		;;
 
 	*)
-		if [ "$pRet" -ne 1 ]; then
-			#echo "naughty.notify({title = \"pianobar\", text = \"$1 failed: $pRetStr\"})" | awesome-client -
+#		if [ "$pRet" -ne 1 ]; then
+#			#echo "naughty.notify({title = \"pianobar\", text = \"$1 failed: $pRetStr\"})" | awesome-client -
 #			kdialog --title pianobar --passivepopup "$1 failed: $pRetStr"
-		elif [ "$wRet" -ne 1 ]; then
-			#echo "naughty.notify({title = \"pianobar\", text = \"$1 failed: Network error: $wRetStr\"})" | awesome-client -
+#			notify-send "Pianobar Error" "$1 failed: %pRetStr"
+#		elif [ "$wRet" -ne 1 ]; then
+#			#echo "naughty.notify({title = \"pianobar\", text = \"$1 failed: Network error: $wRetStr\"})" | awesome-client -
 #			kdialog --title pianobar --passivepopup "$1 failed: Network error: $wRetStr"
-		fi
+#			notify-send "Pianobar Error" "$1 failed: Network error: $wRetStr"
+#		fi
 		;;
 esac
 } &>/dev/null # suppresses all output. Comment this out when debugging!
