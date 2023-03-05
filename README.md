@@ -69,7 +69,7 @@ burpsuite wl-clipboard-history-git wlsunset bpytop lf         \
 inotify-tools terminator tmux thefuck downgrade remmina       \
 timeshift timeshift-autosnap grub-btrfs networkmanager-pptp   \
 networkmanager-openconnect networkmanager-openvpn             \
-networkmanager-vpnc wireshark-qt
+networkmanager-vpnc wireshark-qt piavpn-bin
 ```
 
 ### Copy these files
