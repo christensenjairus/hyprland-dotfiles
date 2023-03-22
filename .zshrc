@@ -462,3 +462,11 @@ alias vim="nvim"
 alias n="neofetch | lolcat"
 alias c="clear"
 alias reinstallgrub="sudo grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=grub && sudo grub-mkconfig -o /boot/grub/grub.cfg"
+alias left="hyprctl dispatch movecurrentworkspacetomonitor DP-1"
+alias right="hyprctl dispatch movecurrentworkspacetomonitor DP-2"
+alias k=kubectl
+alias dash="kubectl -n kube-system port-forward $(kubectl -n kube-system get pods --selector "app.kubernetes.io/name=traefik" --output=name) 9000:9000"
+alias watch="watch --interval 0.2"
+alias w="watch --interval 0.2"
+
+export PATH="${PATH}:${HOME}/.krew/bin"
