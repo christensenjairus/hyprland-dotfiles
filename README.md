@@ -70,7 +70,7 @@ inotify-tools terminator tmux thefuck downgrade remmina       \
 timeshift timeshift-autosnap grub-btrfs networkmanager-pptp   \
 networkmanager-openconnect networkmanager-openvpn             \
 networkmanager-vpnc wireshark-qt piavpn-bin kubectl kubectx   \
-helm
+helm 1password 1pass-autologin
 ```
 
 ### Copy these files
